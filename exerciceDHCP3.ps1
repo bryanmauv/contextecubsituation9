@@ -11,17 +11,6 @@ $adressePasserelle = [Microsoft.VisualBasic.Interaction]::InputBox("Adresse de p
 $adresseDNS = [Microsoft.VisualBasic.Interaction]::InputBox("Adresse du domaine","Entrez l'adresse du domaine","")
 $nomDomaine = [Microsoft.VisualBasic.Interaction]::InputBox("Nom du domaine","Entrez le nom du domaine","")
 
-# Afficher les informations de l'étendue DHCP à créer
-# Write-Host "Vous êtes sur le point de créer l'étendue DHCP suivante :"
-# Write-Host "Nom : $nomEtendue"
-# Write-Host "Adresse réseau : $adresseReseau"
-# Write-Host "Masque sous-réseau : $masqueSousReseau"
-# Write-Host "Première adresse à distribuer : $premiereAdresse"
-# Write-Host "Dernière adresse à distribuer : $derniereAdresse"
-# Write-Host "Adresse de passerelle : $adressePasserelle"
-# Write-Host "le Nom de Domaine : $adresseDNS"
-# Write-Host "l'adresse IP du serveur de domaine : $nomDomaine"
-
 
 $messageConfirmation = "Êtes-vous sûr de vouloir créer l'étendue DHCP suivante ?`n`n" +
                       "Nom de l'étendue DHCP : $nomEtendue`n" +
