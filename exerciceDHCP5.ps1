@@ -51,11 +51,6 @@ for ($i = 1; $i -le $nombreEtendues; $i++) {
 
     $confirmationReservation = [System.Windows.Forms.MessageBox]::Show($messageConfirmation, "Voulez-vous faire une réservation d'adresses pour cette étendue", [System.Windows.Forms.MessageBoxButtons]::YesNo)
 
-    # Vérifier que l'utilisateur a entré un nombre valide
-    if (-not [int]::TryParse($nombreEtendues, [ref]$null)) {
-        Write-Host "Erreur : vous devez entrer un nombre valide."
-        exit
-    }
 
     if ($confirmationReservation -eq "Yes") {
         $NombreReservation = [Microsoft.VisualBasic.Interaction]::InputBox("Nombre de réservation à créer","")
